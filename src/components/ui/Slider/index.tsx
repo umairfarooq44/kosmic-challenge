@@ -55,7 +55,7 @@ const Slider = (props: SliderProps) => (
     direction="row"
     alignItems="center"
     gap={1}
-    width="22rem"
+    maxWidth="22rem"
     px="1rem"
     pt="1.25rem"
     pb="0.75rem"
