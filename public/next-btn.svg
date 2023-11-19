@@ -1,0 +1,18 @@
+<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 2">
+<g id="elements">
+<path id="Vector 6905" d="M9.5 11L13.7929 6.70711C14.1262 6.37377 14.2929 6.20711 14.2929 6C14.2929 5.79289 14.1262 5.62623 13.7929 5.29289L9.5 1" stroke="url(#paint0_radial_227_221)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector 6905_2" d="M1 10L4.43432 6.56568C4.70098 6.29902 4.83431 6.16569 4.83431 6C4.83431 5.83431 4.70098 5.70098 4.43431 5.43431L1 2" stroke="url(#paint1_radial_227_221)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_227_221" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13.2067 6.01217) scale(4.71635 3.77484)">
+<stop stop-color="#523FD7"/>
+<stop offset="1" stop-color="#FF7DFF"/>
+</radialGradient>
+<radialGradient id="paint1_radial_227_221" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(3.96538 6.00973) scale(3.77308 3.01987)">
+<stop stop-color="#523FD7"/>
+<stop offset="1" stop-color="#FF7DFF"/>
+</radialGradient>
+</defs>
+</svg>
