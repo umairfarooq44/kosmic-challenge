@@ -7,9 +7,7 @@ export default function Home() {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", height: "inherit" }}>
       <Header />
-      <main>
-        <ContentForm />
-      </main>
+      <ContentForm />
     </Box>
   );
 }

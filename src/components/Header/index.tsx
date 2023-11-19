@@ -7,7 +7,7 @@ import { styled } from "@mui/material/styles";
 import { Button, Typography, Link, Avatar } from "@mui/material";
 
 const Container = styled("header")(({ theme }) => ({
-  [theme.breakpoints.up("sm")]: {
+  [theme.breakpoints.up("md")]: {
     borderBottom: `1px solid ${theme.palette.divider}`,
     backgroundColor: "#09090D",
   },

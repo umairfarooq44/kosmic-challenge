@@ -6,7 +6,7 @@ import { styled } from "@mui/material/styles";
 import { Box, Button, Typography } from "@mui/material";
 
 const Container = styled("footer")(({ theme }) => ({
-  [theme.breakpoints.up("sm")]: {
+  [theme.breakpoints.up("md")]: {
     borderTop: `1px solid ${theme.palette.divider}`,
     backgroundColor: "#09090D",
   },

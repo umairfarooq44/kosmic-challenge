@@ -41,7 +41,11 @@ const ContentForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <Box
+      onSubmit={handleSubmit}
+      component="form"
+      sx={{ display: "flex", flexDirection: "column", flex: 1 }}
+    >
       <Box
         sx={{
           px: { xs: "1.25rem", md: "2rem" },
@@ -80,7 +84,7 @@ const ContentForm = () => {
         <Slider value={words} onChange={onWordsChange} />
       </Box>
       <Footer />
-    </form>
+    </Box>
   );
 };
 
