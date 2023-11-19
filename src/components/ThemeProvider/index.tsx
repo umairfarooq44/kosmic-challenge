@@ -38,7 +38,6 @@ const darkTheme = createTheme({
     },
   },
 });
-console.log(darkTheme);
 
 const Provider = ({ children }: { children: React.ReactNode }) => {
   return (

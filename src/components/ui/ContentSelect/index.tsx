@@ -1,7 +1,6 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import MuiAutocomplete, { AutocompleteProps } from "@mui/material/Autocomplete";
+import MuiAutocomplete from "@mui/material/Autocomplete";
 import { styled } from "@mui/material/styles";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import { IOption } from "@/utils/data";
@@ -46,10 +45,13 @@ const Autocomplete = styled(MuiAutocomplete)(({ theme }) => ({
 
 interface IContentSelectProps {
   options: IOption[];
+  value: IOption | null;
+  changeValue: (val: IOption | null) => void;
 }
 
 const ContentSelect = (props: IContentSelectProps) => {
-  const { options } = props;
+  const [inputValue, setInputValue] = React.useState("");
+  const { options, value, changeValue } = props;
   return (
     <Autocomplete
       sx={{ maxWidth: "32rem" }}
@@ -60,6 +62,14 @@ const ContentSelect = (props: IContentSelectProps) => {
       getOptionLabel={(option: IOption) => option.label}
       popupIcon={<KeyboardArrowDownRoundedIcon />}
       placeholder="Select"
+      value={value}
+      onChange={(event, newValue) => {
+        changeValue(newValue);
+      }}
+      inputValue={inputValue}
+      onInputChange={(event, newInputValue) => {
+        setInputValue(newInputValue);
+      }}
       renderInput={(params) => (
         <TextField
           {...params}

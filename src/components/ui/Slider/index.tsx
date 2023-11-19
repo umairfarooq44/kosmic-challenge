@@ -1,6 +1,11 @@
-import { Stack, Typography, Slider as MuiSlider, Tooltip } from "@mui/material";
+import {
+  Stack,
+  Typography,
+  Slider as MuiSlider,
+  Tooltip,
+  SliderProps,
+} from "@mui/material";
 import { styled, useTheme } from "@mui/material/styles";
-import { ReactNode } from "react";
 
 const StyledSlider = styled(MuiSlider)(({ theme }) => ({
   "& .MuiSlider-track": {
@@ -45,7 +50,7 @@ const ValueLabelComponent = (props: IValueLabelComponentProps) => {
   );
 };
 
-const Slider = () => (
+const Slider = (props: SliderProps) => (
   <Stack
     direction="row"
     alignItems="center"
@@ -69,6 +74,7 @@ const Slider = () => (
       slots={{
         valueLabel: ValueLabelComponent,
       }}
+      {...props}
     />
     <Typography variant="body2" fontWeight={500} component="span">
       1000

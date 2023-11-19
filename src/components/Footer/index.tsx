@@ -37,6 +37,7 @@ const Footer = () => {
       </Button>
       <Button
         variant="outlined"
+        type="submit"
         sx={{
           borderRadius: "2rem",
           px: "2rem",
